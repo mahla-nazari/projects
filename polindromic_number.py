@@ -1,5 +1,9 @@
 def polindromic_number(n):
-    while n == reverse_a_number(n):
-        return True
+    #Run reverse_a_number function
+    while type(n)==int:
+        while n == reverse_a_number(n):
+            return True
+        else:
+            return False
     else:
-        return False
+        print("Try again")
