@@ -1,12 +1,13 @@
-def reverse_a_number(a):
+def revers_int(n):
     flag = 0
-    while a > 0:
-                
-        x = number_of_digits(a)
-        #Run number_of_digits function
-        b = (a % 10)
-        b*=10**(x-1)
-        flag += b
-        a//=10
+    while type(n)==int:
         
-    return flag
+        while n>0 :
+            x=number_of_digits(n)
+            c= (n%10)
+            c*=10**(x-1)
+            flag+=c
+            n//=10
+        return flag
+    else:
+        print("Enter a number")
